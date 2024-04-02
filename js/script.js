@@ -77,7 +77,7 @@ if (continuarCarrito === "si") {
     let agregarOtros = prompt("¿Quieres agregar productos de la otra sección? (si/no)").toLowerCase();
     if (agregarOtros === "si") {
         palabraElegida = buscar();
-        setTimeout(mostrarPrompt, 1000);
+        setTimeout(mostrarPrompt, 6000);
     } else {
         console.log("Gracias por tu compra. Aquí está tu carrito:", carrito);
         let total = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
@@ -86,4 +86,4 @@ if (continuarCarrito === "si") {
 }
 }
 
-setTimeout(mostrarPrompt, 1000);
+setTimeout(mostrarPrompt, 6000);
